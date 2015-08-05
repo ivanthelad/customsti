@@ -27,6 +27,7 @@ fi
 
 if [ -n "${SOURCE_REF}" ]; then
   BUILD_DIR=$(mktemp --directory --suffix=docker-build)
+  echo "hello World"
   git config --global http.sslVerify false
   git clone --recursive "${SOURCE_REPOSITORY}" "${BUILD_DIR}"
   if [ $? != 0 ]; then
