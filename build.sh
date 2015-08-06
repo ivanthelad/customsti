@@ -12,7 +12,7 @@ fi
 if [ -n "${OUTPUT_IMAGE}" ]; then
   TAG="${OUTPUT_REGISTRY}/${OUTPUT_IMAGE}"
 fi
-
+echo ${SOURCE_REPOSITORY}
 if [[ "${SOURCE_REPOSITORY}" != "git://"* ]] && [[ "${SOURCE_REPOSITORY}" != "git@"* ]]; then
   URL="${SOURCE_REPOSITORY}"
   if [[ "${URL}" != "http://"* ]] && [[ "${URL}" != "https://"* ]]; then
