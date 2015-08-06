@@ -6,7 +6,7 @@ DOCKER_SOCKET=/var/run/docker.sock
 
 if [ ! -e "${DOCKER_SOCKET}" ]; then
   echo "Docker socket missing at ${DOCKER_SOCKET}"
-  exit 1
+  #exit 1
 fi
 
 if [ -n "${OUTPUT_IMAGE}" ]; then
